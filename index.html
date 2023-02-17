@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tablet.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <title>Starbucks Website</title>
+</head>
+<body onload="telaTamanho()">
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo-Starbucks"></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">novos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <span class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+                </span>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é só café <br>é <span>Starbucks</span></h2>
+                <p>O milkshake da Starbucks é uma das bebidas mais populares entre os amantes de café e sobremesas. Esta bebida é feita a partir de ingredientes simples, mas deliciosos, que se combinam para criar uma experiência saborosa e refrescante.</p>
+                <a class="btnLeia" href="#">Leia mais</a>
+                <div class="heart">&hearts;<p>Te amo</p></div>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class="starbucks" alt="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" alt="copo1" onclick="imgSlider('/images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/thumb2.png" alt="copo2"onclick="imgSlider('/images/img22.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" alt="copo3"onclick="imgSlider('/images/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="facebook"></a></li>
+        </ul>
+    </section>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
