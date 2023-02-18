@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+
+/* typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+/* RESPONSIVIDADE */
+
+/* TELAS MAIORES A PARTIR DE 1366px */
+
 @media screen and (min-width: 1366px) and (max-width: 2600px) {
     section {
         position: relative;
@@ -9,7 +24,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #fff;
+        background-color: var(--color-fundo);
     }
     
     header {
@@ -25,15 +40,17 @@
     
     header .logo {
         position: relative;
-        right: 80px;
-        max-width: 80px;
+        right: 50px;
+        max-width: 0px;
+        max-height: 0px;
+        filter: drop-shadow(0 0 5px #fff);
     }
     
     header .menu {
         position: relative;
         display: block;
-        top: 0px;
-        right: 0px;
+        top: 50px;
+        left: -400px;
       
     }
     
@@ -41,17 +58,32 @@
         list-style: none;
         text-align: center;
         background-color: transparent;
-        border: 2px solid white;
-        display: inline-block;
-        
+        border: none;
+        display: inline-block;  
     }
     
     header .menu li a {
-        font-weight: bolder;
-        color: #000;
+        font-size: 20px;
         font-weight: 400;
+        color: var(--color-texto);
         padding: 20px;
         text-decoration: none;
+    }
+
+    .dark_mode_svg {
+        position: absolute;
+        top: -50;
+        left: 1000px;
+    
+    }
+
+    .dark_mode_svg .material-symbols-outlined {
+        background-color: transparent;
+        display: block;
+    }
+    
+    .dark_mode_svg .material-symbols-outlined:hover {
+        background-color: transparent;
     }
     
     .material-symbols-outlined {
@@ -76,6 +108,7 @@
         position: relative;
         width: 100vw;
         margin-top: 100px;
+        padding: 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -89,9 +122,10 @@
     }
     
     .content .textBox h2 {
-        color: #333;
+        color: var(--color-texto);
         width: 20vw;
         margin-top: 150px;
+        padding-left: 20px;
         font-size: 2.5em;
         line-height: 1.4em;
         font-weight: 500;
@@ -105,7 +139,7 @@
     }
     
     .content .textBox p {
-        color: #333;
+        color: var(--color-texto);
         font-size: 1.5em;
         margin: 40px 0 0 10px;
         padding: 10px;
@@ -179,6 +213,7 @@
         margin: 50px 50px;
         transform: scale(1);
         filter: invert(1);
+        filter: drop-shadow(0 0 5px #0000008f);
     }
     
     .sci li img {

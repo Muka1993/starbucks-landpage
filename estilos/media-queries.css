@@ -12,7 +12,7 @@ Grandes telas: acima de 1200px
 
 /* RESPONSIVIDADE */
 
-/* Notebook Positivo */
+/* NOTEBOOK POSITIVO */
 
 @media screen and (min-width: 992px) and (max-width: 1366px) {
     section {
@@ -23,7 +23,7 @@ Grandes telas: acima de 1200px
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #fff;
+        background-color: var(--color-fundo);
     }
     
     header {
@@ -46,7 +46,7 @@ Grandes telas: acima de 1200px
     header .menu {
         position: relative;
         display: block;
-        top: 0px;
+        top: 50px;
         right: 600px;
       
     }
@@ -54,18 +54,33 @@ Grandes telas: acima de 1200px
     header .menu li {
         list-style: none;
         text-align: center;
-        background-color: transparent;
-        border: 2px solid white;
         display: inline-block;
+        border: none;
         
     }
     
     header .menu li a {
         font-weight: bolder;
-        color: #000;
+        color: var(--color-texto);
         font-weight: 400;
         padding: 20px;
         text-decoration: none;
+    }
+
+    .dark_mode_svg {
+        position: absolute;
+        top: -50;
+        left: 1000px;
+    
+    }
+
+    .dark_mode_svg .material-symbols-outlined {
+        background-color: transparent;
+        display: block;
+    }
+    
+    .dark_mode_svg .material-symbols-outlined:hover {
+        background-color: transparent;
     }
     
     .material-symbols-outlined {
@@ -103,7 +118,7 @@ Grandes telas: acima de 1200px
     }
     
     .content .textBox h2 {
-        color: #333;
+        color: var(--color-texto);
         width: 20vw;
         margin-top: 150px;
         font-size: 1.5em;
@@ -119,7 +134,7 @@ Grandes telas: acima de 1200px
     }
     
     .content .textBox p {
-        color: #333;
+        color: var(--color-texto);
         font-size: 1em;
         padding: 10px;
     }
@@ -193,6 +208,7 @@ Grandes telas: acima de 1200px
         margin: 20px 20px;
         transform: scale(1);
         filter: invert(1);
+        filter: drop-shadow(0 0 3px #00000062);
     }
     
     .sci li img {
@@ -210,14 +226,4 @@ Grandes telas: acima de 1200px
         clip-path: circle(440px at right 700px);
     }
     
-    .heart {
-        display: none;
-        font-size: 80px;
-        color: red;
-        filter: drop-shadow(0 0 3px black);
-    }
-    
-    .heart p {
-      font-size: 50px;  
-    }
 }
