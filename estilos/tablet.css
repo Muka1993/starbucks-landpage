@@ -24,7 +24,7 @@ Grandes telas: acima de 1200px
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #fff;
+        background-color: var(--color-fundo);
     }
     
     header {
@@ -46,7 +46,7 @@ Grandes telas: acima de 1200px
     
     header .menu {
         position: absolute;
-        display: none;
+        display: block;
         position: relative;
         top: 55px;
         left: 80px;
@@ -56,7 +56,7 @@ Grandes telas: acima de 1200px
     header .menu li {
         list-style: none;
         text-align: center;
-        background-color: #333;
+        background-color: #333030;
         border: 2px solid white;
         display: block;
         
@@ -74,6 +74,7 @@ Grandes telas: acima de 1200px
       position: absolute;
       top: 50px;
       right: 25px;  
+      background-color: var(--color-fundo);
       cursor: pointer;
       font-variation-settings:
       'FILL' 0,
@@ -104,7 +105,7 @@ Grandes telas: acima de 1200px
     }
     
     .content .textBox h2 {
-        color: #333;
+        color: var(--color-texto);
         width: 20vw;
         margin-top: 150px;
         font-size: 1.5em;
@@ -120,7 +121,7 @@ Grandes telas: acima de 1200px
     }
     
     .content .textBox p {
-        color: #333;
+        color: var(--color-texto);
         font-size: 1.2em;
         padding: 10px;
     }
@@ -148,7 +149,6 @@ Grandes telas: acima de 1200px
     
     .content .imgBox img {
         max-width: 240px;
-    
     }
     
     .thumb {
@@ -194,6 +194,8 @@ Grandes telas: acima de 1200px
         margin: 10px 20px;
         transform: scale(1);
         filter: invert(0);
+        filter: drop-shadow(0 0 5px var(--color-texto)
+        );
     }
     
     .sci li img {

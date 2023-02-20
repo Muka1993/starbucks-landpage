@@ -48,5 +48,5 @@ btnDarkMode.addEventListener("click", (e) => {
         html.classList.add('dark')
     e.target.style.color = 'white'    
     }
-})
+});
 
